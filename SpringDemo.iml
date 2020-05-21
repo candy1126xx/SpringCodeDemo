@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="CDPlayerConfig" removed="false" profiles="useless">
+          <file>file://$MODULE_DIR$/src/main/autowire/CDPlayerConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/javaconfig/MusicPlayerConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/javaconfig/MovieConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/xmlconfig/music_config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/profile/MovieConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/javaconfig/MoviePlayerConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/profile/config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/conditional/MovieConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/primary/DessertConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/qualifier/LunchConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/property_source/WhiteDiscConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/spring_aop/ConcertConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/declare_parents/ConcertConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Spring" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/javalibs/aspectjrt-1.9.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/javalibs/aspectjweaver-1.9.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/javalibs/cglib-3.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

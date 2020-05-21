@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="music" class="main.xmlconfig.Music">
+        <!--  构造参数注入基本类型   -->
+        <constructor-arg value="lovelive"/>
+        <!--  构造参数注入集合   -->
+        <constructor-arg>
+            <list>
+                <value>1</value>
+                <value>3</value>
+                <value>6</value>
+                <value>9</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="musicPlayer" class="main.xmlconfig.MusicPlayer">
+        <!--  构造参数注入bean   -->
+        <!--  "music"与上面的id对应   -->
+        <constructor-arg ref="music"/>
+        <!--  属性注入   -->
+        <property name="endTime" value="11:09:24"/>
+    </bean>
+
+    <!--  如果需要其它xml配置的bean
+    <import resource="xml路径"/>
+      -->
+
+    <!--  xml方式为bean指定profile
+    <beans profile="...">
+        <bean id="..."
+              class="..."  >
+    </beans>
+      -->
+
+    <!--  xml方式为bean设置primary
+    <bean id="...">
+          class="..."
+          primary="true" >
+    </bean>
+      -->
+
+    <!--  xml方式为bean设置scope
+    <bean id="...">
+          class="..."
+          scope="..." >
+          <aop:scoped-proxy proxy-target-class="false" /> 接口false类true
+    </bean>
+      -->
+
+    <!--  xml方式为bean注入属性文件的字符串
+    <bean id="...">
+          class="..."
+          c:_title="${disc.blank}" >
+    </bean>
+    <context:property-placeholder />
+      -->
+
+    <!--  xml方式启用自动代理
+    <aop:aspectj-autoproxy />
+      -->
+
+    <!--  xml方式aop
+    <aop:config>
+        <aop:aspect ref="...">
+            <aop:pointcut
+                id="..."
+                expression="...(...) and args(...)" />
+            <aop:before
+                pointcut-ref="..."
+                method="..." />
+        </aop:aspect>
+    </aop:config>
+      -->
+
+    <!--  xml方式引入方法:把B的方法引入A，C实现了B
+    <aop:config>
+        <aop:aspect>
+            <aop:declare-parents
+                types-matching="A"
+                implement-interface="B"
+                delegate-ref="C" />
+        </aop:aspect>
+    </aop:config>
+      -->
+</beans>
