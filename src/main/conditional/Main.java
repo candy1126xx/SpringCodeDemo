@@ -3,7 +3,7 @@ package main.conditional;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 // 条件化创建Bean
-// 为Bean方法标记Conditional
+// 为Bean方法标记@Conditional
 // 如果GoodCondition的match()返回false，则无法创建对应的bean，会报错
 public class Main {
 

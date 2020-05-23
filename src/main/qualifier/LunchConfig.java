@@ -15,7 +15,7 @@ public class LunchConfig {
     }
 
     @Bean
-    // 用BigCake标记bean方法
+    // 用@BigCake标记bean方法
     @BigCake
     public Dessert cake() {
         return new Cake();

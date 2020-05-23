@@ -6,10 +6,10 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 // 实体类不用任何标记
 // 构造参数注入：
 // 1.实体类中写构造方法
-// 2.xml文件中使用constructor-args
+// 2.xml文件中使用<constructor-args>
 // 属性注入：
-// 1.实体类中写setter
-// 2.xml文件中使用property
+// 1.实体类中写setter()
+// 2.xml文件中使用<property>
 public class Main {
 
     public static void main(String[] args) {

@@ -18,7 +18,7 @@ public class Audience {
         System.out.println("Silencing phones");
     }
 
-    // 环绕通知多了个参数
+    // 环绕通知多了个参数jp
     @Around("performance()")
     public Object watch(ProceedingJoinPoint jp) {
         Object result = null;
@@ -50,7 +50,7 @@ public class Audience {
     // @Around：环绕
     // @Before：前
 
-    // Around1 -> Before -> proceed -> After -> Around2
+    // 执行顺序：Around1 -> Before -> proceed -> After -> Around2
 
-    // execution(返回类型 类全限定名.方法名(参数类型) && within(包名)/bean('bean的ID')
+    // 切点格式：execution(返回类型 类全限定名.方法名(参数类型) && within(包名)/bean('bean的ID')
 }

@@ -4,7 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 // Spring支持的AOP
 // 1.把实体类定义为切面
-// 2.用EnableAspectJAutoProxy标记配置类
+// 2.用@EnableAspectJAutoProxy标记配置类
 public class Main {
 
     public static void main(String[] args) {

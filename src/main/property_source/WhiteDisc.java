@@ -8,7 +8,7 @@ public class WhiteDisc {
 
     private String title;
 
-    // 用Value标记属性
+    // 用@Value标记参数
     public WhiteDisc(@Value("${disc.white}") String title){
         this.title = title;
     }

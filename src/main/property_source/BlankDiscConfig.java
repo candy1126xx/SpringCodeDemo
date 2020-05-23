@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 // 属性源文件
-@PropertySource("classpath:/main/app.properties")
+@PropertySource("/main/app.properties")
 public class BlankDiscConfig {
 
     @Autowired

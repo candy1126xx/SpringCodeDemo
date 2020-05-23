@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Primary;
 public class DessertConfig {
 
     @Bean
-    // 在Bean方法上标记Primary
+    // 方法2：在Bean方法上标记@Primary
     @Primary
     public Dessert iceCream(){
         return new IceCream();

@@ -10,7 +10,7 @@ public class Lunch {
     @Autowired
     // 指定注入的是限定符为cold的bean
     // @Qualifier("cold")
-    // 指定注入的是用BigCake标记的bean
+    // 指定注入的是用@BigCake标记的bean
     @BigCake
     public void setDessert(Dessert dessert) {
         this.dessert = dessert;

@@ -1,6 +1,6 @@
 package main.primary;
 
-// 在类上标记Primary
+// 方法1：在类上标记@Primary
 // @Primary
 public class IceCream implements Dessert {
     @Override

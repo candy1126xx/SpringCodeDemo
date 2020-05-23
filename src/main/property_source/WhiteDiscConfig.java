@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-// Value的方法只能用组件扫描
+// @Value的方法只能用组件扫描
 @ComponentScan
 public class WhiteDiscConfig {
 

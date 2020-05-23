@@ -4,9 +4,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 // 使用属性源文件注入字符串
 // 1.写属性源文件
-// 2.用PropertySource标记配置类，指明属性源文件路径
+// 2.用@PropertySource标记配置类，指明属性源文件路径
 // 3.调用Environment.getXXX读取字符串(BlankDisc)
-// 4.或者使用注解Value(WhiteDisc)
+// 4.或者使用@Value(...)
 public class Main {
 
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package main.primary;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-// Primary解决歧义
+// @Primary解决歧义
 public class Main {
 
     public static void main(String[] args) {
